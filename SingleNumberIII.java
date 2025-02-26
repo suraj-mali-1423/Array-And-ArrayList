@@ -14,15 +14,15 @@ public class SingleNumberIII {
 
         if (arr[n-1] != arr[n-2]){
             helper[j] = arr[n-1];
-            j++;
         }
 
         return  helper;
     }
     public static void main(String[] args) {
+        int i;
           int [] arr  = { 1,2,1,3,2,5};
           int [] result = SingleIII(arr);
-          for( int i = 0 ; i < result.length ; i++ ){
+          for(  i = 0 ; i < result.length ; i++ ){
               System.out.print(result[i] +"  ");
           }
     }
