@@ -4,7 +4,8 @@ public class RotateKthStep {
     public  static  void ReverseKth( int [] arr , int k ){
         int n = arr.length;
         int [] Result = new int [n];
-
+        // If The k  is greater then you use
+        k = k % n;
         for ( int i = 0 ; i < n ; i++ ){
             Result[(i+k) % n] = arr[i];
         }
